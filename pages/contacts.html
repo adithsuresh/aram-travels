@@ -471,12 +471,15 @@
                     ng-init='hash = &apos;2@eyJoIjoiNmY1VzBtVGxLOUpyQXhnZ1FxRDcybnZHdUxQZjhcLzRmRUVpTFZRbCtiU3M9IiwiaSI6IkNiMWZjWWRSbktkOThBSGhESmNINHc9PSIsInYiOiJoZUdkQXZQZUxrMnpaXC8wdXNhYStid29kclBRaHBRXC9sZ045U3hnbDRqTjI2VlN1NEdLNXg2QXhhSEM4T1JoT1N0S04yMUVlcTVhTEJ0Y2xMdjhONU5BPT0ifQ==&apos;;actionAfterSubmission={"action":"none","url":"","target":"_self","id":""};resetAfterSubmission=false'
                   >
                     <form
-                      id="wid__contact_form__6044d750100f8__form"
+                      id="210815362715452"
+                      name="form_210815362715452"
+                      method="post"
                       class="moto-widget-contact_form-form"
                       role="form"
-                      name="contactForm"
                       ng-submit="submit()"
                       novalidate
+                      action="https://submit.jotform.com/submit/210815362715452/"
+                      accept-charset="utf-8"
                     >
                       <div ng-show="sending" class="contact-form-loading"></div>
 
@@ -489,16 +492,18 @@
                         <input
                           type="text"
                           class="moto-widget-contact_form-field moto-widget-contact_form-input"
-                          placeholder="Name "
+                          placeholder="Name *"
                           ng-model-options="{ updateOn: 'blur' }"
-                          name="name"
-                          id="field_name_wid__contact_form__6044d750100f8"
+                          id="input_17"
+                          name="q17_name17"
                           ng-model="message.name"
+                          style="color: #000"
+                          required
                         />
                         <span
                           class="moto-widget-contact_form-field-error ng-cloak"
                           ng-cloak
-                          ng-show="contactForm.name.$invalid && !contactForm.name.$pristine && !contactForm.name.emailInvalid"
+                          ng-show="form_210815362715452.name.$invalid && !form_210815362715452.name.$pristine && !form_210815362715452.name.emailInvalid"
                           >Field is required</span
                         >
                       </div>
@@ -514,22 +519,23 @@
                           class="moto-widget-contact_form-field moto-widget-contact_form-input"
                           placeholder="E-mail *"
                           ng-blur="validate('email')"
-                          required
                           ng-model-options="{ updateOn: 'blur' }"
-                          name="email"
-                          id="field_email_wid__contact_form__6044d750100f8"
+                          id="input_11"
+                          name="q11_email11"
                           ng-model="message.email"
+                          style="color: #000"
+                          required
                         />
                         <span
                           class="moto-widget-contact_form-field-error ng-cloak"
                           ng-cloak
-                          ng-show="contactForm.email.$invalid && !contactForm.email.$pristine && !contactForm.email.emailInvalid"
+                          ng-show="form_210815362715452.email.$invalid && !form_210815362715452.email.$pristine && !form_210815362715452.email.emailInvalid"
                           >Field is required</span
                         >
                         <span
                           class="moto-widget-contact_form-field-error ng-cloak"
                           ng-cloak
-                          ng-show="contactForm.email.emailInvalid && !contactForm.email.$pristine"
+                          ng-show="form_210815362715452.email.emailInvalid && !form_210815362715452.email.$pristine"
                           >Incorrect email</span
                         >
                       </div>
@@ -545,14 +551,17 @@
                           class="moto-widget-contact_form-field moto-widget-contact_form-input"
                           placeholder="Phone "
                           ng-model-options="{ updateOn: 'blur' }"
-                          name="phone"
-                          id="field_phone_wid__contact_form__6044d750100f8"
+                          id="input_19"
+                          name="q19_phoneNumber"
                           ng-model="message.phone"
+                          maxlength="10"
+                          onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+                          style="color: #000"
                         />
                         <span
                           class="moto-widget-contact_form-field-error ng-cloak"
                           ng-cloak
-                          ng-show="contactForm.phone.$invalid && !contactForm.phone.$pristine && !contactForm.phone.emailInvalid"
+                          ng-show="form_210815362715452.phone.$invalid && !form_210815362715452.phone.$pristine && !form_210815362715452.phone.emailInvalid"
                           >Field is required</span
                         >
                       </div>
@@ -566,16 +575,18 @@
                         <textarea
                           class="moto-widget-contact_form-field moto-widget-contact_form-textarea"
                           rows="3"
-                          placeholder="Message "
+                          placeholder="Message *"
                           ng-model-options="{ updateOn: 'blur' }"
-                          name="message"
-                          id="field_message_wid__contact_form__6044d750100f8"
+                          id="input_6"
+                          name="q6_message"
                           ng-model="message.message"
+                          style="color: #000"
+                          required
                         ></textarea>
                         <span
                           class="moto-widget-contact_form-field-error ng-cloak"
                           ng-cloak
-                          ng-show="contactForm.message.$invalid && !contactForm.message.$pristine"
+                          ng-show="form_210815362715452.message.$invalid && !form_210815362715452.message.$pristine"
                           >Field is required</span
                         >
                       </div>
@@ -601,6 +612,7 @@
                           data-align="right"
                         >
                           <button
+                            id="input_7"
                             type="submit"
                             class="moto-widget-button-link moto-size-medium"
                             data-size="medium"
