@@ -1465,6 +1465,9 @@ h4 {
     line-height: 1.2;
     letter-spacing: 0px;
   }
+  .text-responsive-center {
+    text-align: center;
+  }
 }
 @media (max-width: 479px) {
   .moto-text_system_3 {
